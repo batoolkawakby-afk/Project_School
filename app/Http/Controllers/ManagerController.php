@@ -21,8 +21,8 @@ class ManagerController extends Controller
         ]);
 
         $manager = Manager::create([
-            'firstAndLastname' => $request->firstAndLastname,
-           
+            'firstname' => $request->firstname,
+           'lastName'=>$request->lastName,
             
             'mobile' => $request->mobile,
             'password' => Hash::make($request->password),
